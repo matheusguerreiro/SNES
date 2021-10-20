@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="cores.css">
+    <title>SNES - Emuladores</title>
+</head>
+<body>
+    <header class="w3-container w3-center w3-corpo-l3">
+        <h1 class="w3-text-logo2">SNES</h1>
+        <p>p o r &nbsp; M G F</p>
+    </header>
+    <div class="w3-center w3-ss w3-border-bottom w3-border-top w3-border-logo2 divMenu">
+        <nav class="w3-bar w3-ss">
+            <a href="index.html" class="w3-bar-item w3-button w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo" target="_self" rel="prev">H O M E</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-ba w3-border w3-border-corpo w3-hover-ba">E M U L A D O R E S</a>
+            <a href="roms.html" class="w3-bar-item w3-button w3-hide-small w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo" target="_self" rel="next">R O M S</a>
+            <a href="historia.html" class="w3-bar-item w3-button w3-hide-small w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo">H I S T Ó R I A</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-ba w3-right w3-border w3-border-corpo w3-hover-ba w3-hide-large w3-hide-medium" onclick="abrirfecharMenu()">&#9776;</a>
+        </nav>
+        <nav id="menuBotao" class="w3-bar-block w3-center w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button w3-ba w3-border w3-border-corpo w3-hover-ba">E M U L A D O R E S</a>
+            <a href="roms.html" class="w3-bar-item w3-button w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo">R O M S</a>
+            <a href="historia.html" class="w3-bar-item w3-button w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo">H I S T Ó R I A</a>
+        </nav>
+    </div>
+    <main class="w3-row w3-corpo">
+        <div class="w3-quarter w3-hide-small">
+            &nbsp;
+        </div>
+        <div class="w3-half w3-center">
+            <a href="emuladores/snes9x-1.60-win32-x64.zip" target="_self" download="snes9x">
+                <div class="w3-card w3-ss w3-border w3-border-ss w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/logo-snes9x-200px.png" alt="Snes9x">
+                    <div class="w3-container w3-center w3-corpo-l3">
+                        Windows 10, 8.1 e 7
+                    </div>
+                </div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus&rdid=com.explusalpha.Snes9xPlus&feature=md&offerId" target="_blank" rel="external">
+                <div class="w3-card w3-ss w3-border w3-border-ss w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/logo-snes9xex+-200px.png" alt="Snes9x Ex+">
+                    <div class="w3-container w3-center w3-corpo-l3">
+                        Android
+                    </div>
+                </div>
+            </a>
+            <a href="emuladores/zsnes151.zip" target="_self" download="zsnes">
+                <div class="w3-card w3-ss w3-border w3-border-ss w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/logo-zsnes-200px.png" alt="ZSNES">
+                    <div class="w3-container w3-center w3-corpo-l3">
+                        Windows 7 e XP
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="w3-quarter w3-hide-small">
+            &nbsp;
+        </div>
+    </main>
+    <footer class="w3-container w3-ss w3-center">
+        <a href="https://www.nintendo.com/pt_BR/" target="_blank" rel="external" class="w3-text-corpo w3-hover-text-logo">A</a>
+    </footer>
+    <script>
+        function abrirfecharMenu() {
+          var x = document.getElementById("menuBotao");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: snes;
+    src: url(fonts/dharma-gothic-e-regular.otf);
+}
+@font-face {
+    font-family: nintendo;
+    src: url(fonts/Pretendo.ttf);
+}
+@font-face {
+    font-family: logo;
+    src: url(fonts/Game\ Logos.ttf);
+}
+
+:root {
+    --logo: #fc0c18;
+    --corpo: #d6d5da;
+    --logo2: #9f9ea6;
+    --yx: #aaa7de;
+    --ba: #543a91;
+    --ss: #414143;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: var(--corpo);
+}
+
+header h1 {
+    font-family: snes;
+    font-size: 64px;
+    font-style: italic;
+}
+header p {
+    font-family: snes;
+    font-size: 20px;
+    font-style: italic;
+    margin: -35px -16px 25px -16px;
+    color: #efeff1;
+    background-color: var(--logo2);
+}
+
+.w3-bar {
+    margin-top: 5px;
+    font-family: snes;
+    font-size: 16px;
+}
+.w3-bar a {
+    padding: 4px 21px 0px 21px !important;
+    margin: 5px 12.5px 5px 12.5px;
+    border-radius: 2px;
+}
+.w3-bar a:hover {
+    box-shadow: 0px 0px 8px 2px var(--yx);
+}
+.w3-bar-block {
+    font-family: snes;
+    font-size: 16px;
+}
+.w3-bar-block a {
+    width: 96% !important;
+    margin: 0px auto 10px;
+    border-radius: 2px;
+    padding-top: 11px !important;
+}
+.w3-bar-block a:hover {
+    box-shadow: 0px 0px 8px 2px var(--yx);
+}
+.divMenu {
+    margin-bottom: 25px;
+}
+
+main.mI {
+    background-color: #f7f7f8;
+}
+main.mI img {
+    width: 75%;
+    margin: 50px 0px;
+}
+
+.w3-card {
+    display: inline-block;
+    width: 250px;
+    margin: 25px 25px 25px 25px;
+    border-radius: 2px;
+}
+.w3-card img {
+    width: 200px;
+    margin: 25px;
+}
+.w3-card:hover {
+    box-shadow: 0px 0px 8px 2px var(--ba);
+    font-weight: bold;
+}
+.w3-card:hover img {
+    border-color: var(--logo2) !important;
+}
+
+.roms {
+    width: 271px;
+    height: auto;
+    /* margin: 25px 25px 25px 25px; */
+}
+.roms img {
+    width: 250px;
+    height: 182px;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+.nomeRom {
+    /* display: none; */
+}
+
+input {
+    margin: 25px auto 25px auto !important;
+    border-radius: 2px;
+    width: 271px !important;
+}
+input:hover {
+    box-shadow: 0px 0px 8px 2px var(--yx);
+}
+::placeholder {
+    color: var(--ba);
+}
+
+footer {
+    font-family: logo;
+    font-weight: normal;
+    padding: 5px 0px 6px !important;
+    margin-top: 25px;
+}
+footer a {
+    text-decoration: none;
+    font-size: 20px;
+}
+.fI {
+    margin: 0px;
+}

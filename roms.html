@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="cores.css">
+    <title>SNES - Roms</title>
+</head>
+<body>
+    <header class="w3-container w3-center w3-corpo-l3">
+        <h1 class="w3-text-logo2">SNES</h1>
+        <p>p o r &nbsp; M G F</p>
+    </header>
+    <div class="w3-center w3-ss w3-border-bottom w3-border-top w3-border-corpo divMenu">
+        <nav class="w3-bar w3-ss">
+            <a href="index.html" class="w3-bar-item w3-button w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo" target="_self" rel="prev">H O M E</a>
+            <a href="emuladores.html" class="w3-bar-item w3-button w3-hide-small w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo" target="_self" rel="prev">E M U L A D O R E S</a>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-ba w3-border w3-border-corpo w3-hover-ba">R O M S</a>
+            <a href="historia.html" class="w3-bar-item w3-button w3-hide-small w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo">H I S T Ó R I A</a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-ba w3-right w3-border w3-border-corpo w3-hover-ba w3-hide-large w3-hide-medium" onclick="myFunction()"><strong>&#9776;</strong></a>
+        </nav>
+        <nav id="menuBotao" class="w3-bar-block w3-center w3-hide w3-hide-large w3-hide-medium">
+            <a href="emuladores.html" class="w3-bar-item w3-button w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo">E M U L A D O R E S</a>
+            <a href="roms.html" class="w3-bar-item w3-button w3-ba w3-border w3-border-corpo w3-hover-ba">R O M S</a>
+            <a href="historia.html" class="w3-bar-item w3-button w3-yx-l1 w3-border w3-border-logo2 w3-hover-ba w3-hover-border-corpo">H I S T Ó R I A</a>
+        </nav>
+    </div>
+    <main class="w3-container w3-center">
+        <input class="w3-input w3-animate-input w3-border w3-border-logo2 w3-center w3-corpo-l4" type="text" placeholder="Filtre sua Rom aqui..." id="myInput" onkeyup="myFunction2()">
+        <div class="w3-center" id="listaJogos">
+            <a href="roms/Super Mario World (USA).sfc" download="Super Mario World" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperMarioWorld.jpg" alt="Super Mario World" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Mario World
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Super Mario All-Stars (USA).sfc" download="Super Mario All-Stars" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperMarioAll-Stars.jpg" alt="Super Mario All-Stars" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Mario All-Stars
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Donkey Kong Country (USA) (Rev-B).sfc" download="Donkey Kong Country" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/DonkeyKongCountry.jpg" alt="Donkey Kong Country" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Donkey Kong Country
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Legend of Zelda, The - A Link to the Past (USA).sfc" download="Legend of Zelda, The - A Link to the Past" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/LegendofZelda,The-ALinktothePast.jpg" alt="Legend of Zelda, The - A Link to the Past" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Legend of Zelda
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Mega Man X (USA).sfc" download="Mega Man X" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/MegaManX.jpg" alt="Mega Man X" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Mega Man X
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Super Mario Kart (USA).sfc" download="Super Mario Kart" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperMarioKart.jpg" alt="Super Mario Kart" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Mario Kart
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Super Metroid (USA).sfc" download="Super Metroid" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperMetroid.jpg" alt="Super Metroid" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Metroid
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Street Fighter II Turbo - Hyper Fighting (USA) (Rev-A).sfc" download="Street Fighter II Turbo" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/StreetFighterIITurbo.jpg" alt="Street Fighter II Turbo" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Street Fighter II Turbo
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Donkey Kong Country 2 - Diddy's Kong Quest (USA) (Rev-A).sfc" download="Donkey Kong Country 2 - Diddy's Kong Quest" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/DonkeyKongCountry2-Diddy'sKongQuest.jpg" alt="Donkey Kong Country 2 - Diddy's Kong Quest" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Donkey Kong Country 2
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Teenage Mutant Ninja Turtles IV - Turtles in Time (USA).sfc" download="Teenage Mutant Ninja Turtles IV - Turtles in Time" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/TeenageMutantNinjaTurtlesIV-TurtlesinTime.jpg" alt="Teenage Mutant Ninja Turtles IV - Turtles in Time" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Ninja Turtles IV
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA).sfc" download="Donkey Kong Country 3 - Dixie Kong's Double Trouble!" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/DonkeyKongCountry3-DixieKong'sDoubleTrouble.jpg" alt="Donkey Kong Country 3 - Dixie Kong's Double Trouble!" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Donkey Kong Country 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Aladdin (U) [!].smc" download="Aladdin" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/Aladdin.jpg" alt="Aladdin" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Aladdin
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Mega Man X3 (USA).sfc" download="Mega Man X3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/MegaManX3.jpg" alt="Mega Man X3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Mega Man X3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Ultimate Mortal Kombat 3 (USA).sfc" download="Ultimate Mortal Kombat 3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/UltimateMortalKombat3.jpg" alt="Ultimate Mortal Kombat 3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Ultimate Mortal Kombat 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Killer Instinct (USA) (Rev-A).sfc" download="Killer Instinct" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/KillerInstinct.jpg" alt="Killer Instinct" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Killer Instinct
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Street Fighter Alpha 2 (USA).sfc" download="Street Fighter Alpha 2" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/StreetFighterAlpha2.jpg" alt="Street Fighter Alpha 2" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Street Fighter Alpha 2
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Super Bomberman 4 (Japan) (En) (1.0).sfc" download="Super Bomberman 4" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperBomberman4.jpg" alt="Super Bomberman 4" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Bomberman 4
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Top Gear (USA).sfc" download="Top Gear" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/TopGear.jpg" alt="Top Gear" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Top Gear
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Mega Man X2 (USA).sfc" download="Mega Man X2" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/MegaManX2.jpg" alt="Mega Man X2" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Mega Man X2
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Super Street Fighter II - The New Challengers (USA).sfc" download="Super Street Fighter II - The New Challengers" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperStreetFighterII-TheNewChallengers.jpg" alt="Super Street Fighter II - The New Challengers" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Street Fighter II
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Final Fight 3 (USA).sfc" download="Final Fight 3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/FinalFight3.jpg" alt="Final Fight 3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Final Fight 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Super Bomberman 3 (Europe).sfc" download="Super Bomberman 3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SuperBomberman3.jpg" alt="Super Bomberman 3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Super Bomberman 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Dragon Ball Z - Super Butouden 3 (France) (En) (1.0).sfc" download="Dragon Ball Z - Super Butouden 3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/DragonBallZ-SuperButouden3.jpg" alt="Dragon Ball Z - Super Butouden 3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Dragon Ball Z 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Mickey to Donald - Magical Adventure 3 (Japan) (En) (1.4).sfc" download="Mickey to Donald - Magical Adventure 3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/MickeytoDonald-MagicalAdventure3.jpg" alt="Mickey to Donald - Magical Adventure 3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Mickey to Donald 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Top Gear 2 (USA).sfc" download="Top Gear 2" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/TopGear2.jpg" alt="Top Gear 2" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Top Gear 2
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Lion King, The (USA).sfc" download="Lion King, The" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/LionKing,The.jpg" alt="Lion King, The" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Lion King, The
+                    </div>
+                </div>
+            </a>
+            <a href="roms/International Superstar Soccer Deluxe (USA).sfc" download="International Superstar Soccer Deluxe" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/InternationalSuperstarSoccerDeluxe.jpg" alt="International Superstar Soccer Deluxe" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Superstar Soccer Deluxe
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Spider-Man and Venom - Maximum Carnage (USA).sfc" download="Spider-Man and Venom - Maximum Carnage" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/Spider-Man&Venom-MaximumCarnage.jpg" alt="Spider-Man and Venom - Maximum Carnage" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Spider-Man and Venom
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Top Gear 3000 (USA).sfc" download="Top Gear 3000" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/TopGear3000.jpg" alt="Top Gear 3000" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Top Gear 3000
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Battletoads & Double Dragon - The Ultimate Team (USA).sfc" download="Battletoads & Double Dragon - The Ultimate Team" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/Battletoads&DoubleDragon-TheUltimateTeam.jpg" alt="Battletoads & Double Dragon - The Ultimate Team" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Battletoads & Double Dragon
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Goof Troop (U) [!].smc" download="Goof Troop" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/GoofTroop.jpg" alt="Goof Troop" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Goof Troop
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Wild Guns (U).smc" download="Wild Guns" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/WildGuns.jpg" alt="Wild Guns" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Wild Guns
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Rock N' Roll Racing (U).smc" download="Rock N' Roll Racing" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/RockN'RollRacing.jpg" alt="Rock N' Roll Racing" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Rock N' Roll Racing
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Captain Commando (U).smc" download="Captain Commando" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/CaptainCommando.jpg" alt="Captain Commando" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Captain Commando
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Adventures of Batman & Robin, The (U).smc" download="Adventures of Batman & Robin, The" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/AdventuresofBatman&Robin,The.jpg" alt="Adventures of Batman & Robin, The" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Batman & Robin
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Aero Fighters (U).smc" download="Aero Fighters" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/AeroFighters.jpg" alt="Aero Fighters" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Aero Fighters
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Dragon Ball Z - Super Butouden 2 (Japan) (Rev-A).sfc" download="Dragon Ball Z - Super Butouden 2" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/DragonBallZ-SuperButouden2.jpg" alt="Dragon Ball Z - Super Butouden 2" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Dragon Ball Z 2
+                    </div>
+                </div>
+            </a>
+            <a href="roms/SimCity (USA).sfc" download="SimCity" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/SimCity.jpg" alt="SimCity" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        SimCity
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Final Fantasy V (Japan) (En) (1.10) (Modernized + Monsters fix).sfc" download="Final Fantasy V" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/FinalFantasyV.jpg" alt="Final Fantasy V" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Final Fantasy V
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Final Fantasy III (USA) (Rev-A).sfc" download="Final Fantasy III" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/FinalFantasyIII.jpg" alt="Final Fantasy III" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Final Fantasy III
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Mortal Kombat 3 (USA).sfc" download="Mortal Kombat 3" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/MortalKombat3.jpg" alt="Mortal Kombat 3" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Mortal Kombat 3
+                    </div>
+                </div>
+            </a>
+            <a href="roms/Star Fox 2 (USA) (SNES Classic Edition).sfc" download="Star Fox 2" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/StarFox2.jpg" alt="Star Fox 2" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        Star Fox 2
+                    </div>
+                </div>
+            </a>
+            <a href="roms/" download="" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/" alt="" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        
+                    </div>
+                </div>
+            </a>
+            <a href="roms/" download="" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/" alt="" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        
+                    </div>
+                </div>
+            </a>
+            <a href="roms/" download="" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/" alt="" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        
+                    </div>
+                </div>
+            </a>
+            <a href="roms/" download="" target="_self">
+                <div class="w3-card w3-center w3-ss w3-border w3-border-ss roms w3-hover-ba w3-hover-border-corpo">
+                    <img src="imagens/roms/" alt="" class="w3-border w3-border-ss">
+                    <div class="w3-container w3-center w3-corpo nomeRom">
+                        
+                    </div>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="w3-container w3-ss w3-center w3-border-top w3-border-bottom w3-border-corpo">
+        <a href="https://www.nintendo.com/pt_BR/" target="_blank" rel="external" class="w3-text-corpo w3-hover-text-logo">A</a>
+    </footer>
+    <script>
+        function myFunction2() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("listaJogos");
+            li = ul.getElementsByTagName("a");
+            for (i = 0; i < li.length; i++) {
+                txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        function myFunction() {
+          var x = document.getElementById("menuBotao");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+</body>
+</html>
