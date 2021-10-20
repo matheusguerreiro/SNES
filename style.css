@@ -80,7 +80,7 @@ main.mI {
     background-color: #f7f7f8;
 }
 main.mI img {
-    width: 75%;
+    width: 90%;
     margin: 50px 0px;
 }
 
@@ -115,7 +115,7 @@ main.mI img {
 }
 
 .nomeRom {
-    /* display: none; */
+    display: none;
 }
 
 input {
