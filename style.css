@@ -131,6 +131,10 @@ main.mI img {
     box-shadow: 0px 0px 8px 2px var(--logo2);
 }
 
+article h2 {
+    font-family: snes;
+    font-size: 48px;
+}
 article p {
     padding: 0px 25px 25px;
     text-indent: 25px;
@@ -139,16 +143,16 @@ article p {
 article hr.hrH {
     border-top: 1px solid var(--ss);
 }
-article a {
+article a:link {
     text-decoration: none;
     color: var(--logo);
     font-weight: bold;
 }
+article a:visited {
+    color: #9e0209;
+}
 article a:hover {
     text-decoration: underline;
-}
-article a:visited {
-    color: var(--logo2);
 }
 
 .nomeRom {
