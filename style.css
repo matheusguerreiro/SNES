@@ -180,6 +180,21 @@ article a:hover {
     text-decoration: underline;
 }
 
+.irParaN64 {
+    padding: 4px;
+    border: 2px dashed;
+    border-radius: 2px;
+    background-color: white;
+    color: var(--logo);
+}
+.irParaN64:hover {
+    border-style: solid;
+    text-decoration: none;
+}
+.irParaN64:active {
+    background-color: yellow;
+}
+
 .nomeRom {
     display: none;
 }
