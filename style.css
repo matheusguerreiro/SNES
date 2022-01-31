@@ -117,14 +117,39 @@ main.mI img {
     border-radius: 2px;
 }
 
+.fundo {
+    /* padding: 25px; */
+    border-radius: 2px;
+}
+
 .consoles {
-    width: 89%;
+    display: inline-block;
+    width: screen;
+    max-width: 400px;
     height: auto;
+    color: black;
     background-color: white;
     text-align: center;
+    border-radius: 2px;
+}
+.consoles h5 {
+    padding: 5px;
+    font-weight: bold;
+    background-color: var(--ss);
+    color: white;
+    margin: 0px;
+}
+.consoles p {
+    padding: 3px;
+    text-indent: 0px;
+    background-color: var(--corpo);
+    color: black;
+    border-radius: 0px 0px 2px 2px;
 }
 .consoles img {
-    width: 85%;
+    padding: 12.5px;
+    border-radius: 4px;
+    width: 100%;
     height: auto;
 }
 .consoles:hover {
